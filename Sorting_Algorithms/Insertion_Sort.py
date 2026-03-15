@@ -5,6 +5,7 @@ def insertion_sort(arr):
             arr[j], arr[j-1] =  arr[j-1], arr[j]
             j -= 1
 
-arr1 = [5, 1, 13, 18, 11, 44, 31]
-insertion_sort(arr1)
-print(arr1)
+if __name__ == '__main__':
+    arr1 = [5, 1, 13, 18, 11, 44, 31]
+    insertion_sort(arr1)
+    print(arr1)

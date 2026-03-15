@@ -80,23 +80,23 @@ class HashTable:
                 itr += 1
             
 
+if __name__ == '__main__':
+    hm = HashTable()
 
-hm = HashTable()
-
-hm["One"] = 1
-hm["Two"] = 2
-hm["march 6"] = 108
-hm["march 17"] = 111
+    hm["One"] = 1
+    hm["Two"] = 2
+    hm["march 6"] = 108
+    hm["march 17"] = 111
 
 
-print(hm['One'])
-print(hm['Two'])
-print(hm['hh'])
-print(hm.arr)
+    print(hm['One'])
+    print(hm['Two'])
+    print(hm['hh'])
+    print(hm.arr)
 
-print(hm["march 17"])
-print(hm.get_hash('march 17'))
+    print(hm["march 17"])
+    print(hm.get_hash('march 17'))
 
-del hm['One']
-del hm['march 17']
-print(hm.arr)
+    del hm['One']
+    del hm['march 17']
+    print(hm.arr)

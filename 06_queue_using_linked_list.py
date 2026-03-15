@@ -58,16 +58,16 @@ class queue:
         print("none")
         
         
+if __name__ == '__main__':
+    Q = queue()
+    Q.dequeue()
+    print(Q.isEmpty())
+    Q.enqueue(1)
+    Q.enqueue(2)
+    Q.enqueue(3)
 
-Q = queue()
-Q.dequeue()
-print(Q.isEmpty())
-Q.enqueue(1)
-Q.enqueue(2)
-Q.enqueue(3)
-
-print(Q.peek())
-Q.dequeue()
-print(Q.peek())
-print(Q.Size())
-Q.printQueue()
+    print(Q.peek())
+    Q.dequeue()
+    print(Q.peek())
+    print(Q.Size())
+    Q.printQueue()

@@ -40,17 +40,19 @@ class CircularLinkedList:
         str += ']'
         print(str)
 
-cll = CircularLinkedList()
-cll.insert_next(2)
-cll.insert_next(33)
-cll.insert_next(444)
-cll.insert_next(5555)
-cll.insert_next(6)
+
+if __name__ == '__main__':
+    cll = CircularLinkedList()
+    cll.insert_next(2)
+    cll.insert_next(33)
+    cll.insert_next(444)
+    cll.insert_next(5555)
+    cll.insert_next(6)
 
 
-cll.print_list()
+    cll.print_list()
 
-cll.insert_next(7)
-cll.insert_next(88)
+    cll.insert_next(7)
+    cll.insert_next(88)
 
-cll.print_list()
+    cll.print_list()

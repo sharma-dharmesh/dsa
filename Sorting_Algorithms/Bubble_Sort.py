@@ -8,6 +8,7 @@ def bubbleSort(arr):
         if flag == 0:
             break
     
-arr1 = [5,3,1,7,8, 9, 2]
-bubbleSort(arr1)
-print(arr1)
+if __name__ == '__main__':
+    arr1 = [5,3,1,7,8, 9, 2]
+    bubbleSort(arr1)
+    print(arr1)

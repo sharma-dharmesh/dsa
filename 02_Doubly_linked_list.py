@@ -133,28 +133,29 @@ class DoublyLinkedList:
                 itr = itr.prev
             print('none')
     
-dll = DoublyLinkedList()
-dll.insert_at_beginning(2)
-dll.insert_at_beginning(1)
-dll.insert_at_beginning(3)
+if __name__=='__main__':    
+    dll = DoublyLinkedList()
+    dll.insert_at_beginning(2)
+    dll.insert_at_beginning(1)
+    dll.insert_at_beginning(3)
 
-dll.insert_at_end(33)
-dll.insert_at_end(44)
+    dll.insert_at_end(33)
+    dll.insert_at_end(44)
 
-dll.insert_at(2, "Two")
-dll.insert_at(5, "five")
+    dll.insert_at(2, "Two")
+    dll.insert_at(5, "five")
 
-dll.print_forward()
-print(f'Length : {dll.get_length()}')
-dll.print_backward()
-print(f'Length : {dll.get_length()}')
+    dll.print_forward()
+    print(f'Length : {dll.get_length()}')
+    dll.print_backward()
+    print(f'Length : {dll.get_length()}')
 
-dll.remove_at(2)
+    dll.remove_at(2)
 
-dll.insert_list(["Apple", 'Mango', 'Orange'])
-dll.print_forward()
-dll.print_backward()
+    dll.insert_list(["Apple", 'Mango', 'Orange'])
+    dll.print_forward()
+    dll.print_backward()
 
-dll.remove_by_value('Orange')
-dll.print_forward()
-dll.print_backward()
+    dll.remove_by_value('Orange')
+    dll.print_forward()
+    dll.print_backward()

@@ -92,19 +92,19 @@ class Linkedlist:
                 itr = itr.next
             print('none')
 
+if __name__ == '__main__':
+    ll = Linkedlist()
+    ll.insert_at_begenning(2)
+    ll.insert_at_begenning(3)
+    ll.insert_at_begenning(54)
 
-ll = Linkedlist()
-ll.insert_at_begenning(2)
-ll.insert_at_begenning(3)
-ll.insert_at_begenning(54)
+    ll.insert_at_end(84)
+    ll.insert_at_end(89)
 
-ll.insert_at_end(84)
-ll.insert_at_end(89)
+    ll.print_list()
+    print(f"The length is: {ll.get_length()}")
 
-ll.print_list()
-print(f"The length is: {ll.get_length()}")
-
-ll.remove_at(1)
-ll.insert_at(4, 9999)
-ll.print_list()
-print(f"The length is: {ll.get_length()}")
+    ll.remove_at(1)
+    ll.insert_at(4, 9999)
+    ll.print_list()
+    print(f"The length is: {ll.get_length()}")
