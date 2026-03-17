@@ -38,8 +38,9 @@ def mergeSort(arr, l, r):
         mergeSort(arr, m + 1, r)
         merge(arr, l, m, r)
 
-arr = [12, 11, 13, 5, 6, 7]
-print("Given array is:", arr)
+if __name__ == '__main__':
+    arr = [12, 11, 13, 5, 6, 7]
+    print("Given array is:", arr)
 
-mergeSort(arr, 0, len(arr) - 1)
-print("Sorted array is:", arr)
+    mergeSort(arr, 0, len(arr) - 1)
+    print("Sorted array is:", arr)
